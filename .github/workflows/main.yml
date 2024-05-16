@@ -21,4 +21,6 @@ jobs:
         script: |
           cd /home/dawid/projects/vps-compose
           git pull
+          docker-compose down || echo "Failed to stop containers, possibly already stopped."
+          docker-compose pull
           docker-compose up -d
