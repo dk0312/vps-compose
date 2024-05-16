@@ -19,6 +19,6 @@ jobs:
         username: ${{ secrets.SERVER_USERNAME }}
         password: ${{ secrets.SERVER_PASSWORD }}
         script: |
-          cd /home/dawid/projects/compose-app
+          cd /home/dawid/projects/vps-compose
           git pull
           docker-compose up -d
