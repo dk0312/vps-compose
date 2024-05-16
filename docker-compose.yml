@@ -3,5 +3,5 @@ services:
   vps-test:
     image: dk0312/vps-test:latest
     ports:
-      - "80:80"
+      - "8080:80" 
     restart: unless-stopped
